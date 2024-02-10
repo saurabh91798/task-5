@@ -1,0 +1,238 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+nav{
+    background-color: #f3faff;
+    box-shadow: 0 0 4px #bbd0e2;
+}
+
+
+.main-nav{
+    justify-content: space-between;
+    padding-block: 8px;
+}
+
+.nav-links ul{
+    gap: 16px;
+}
+
+.hover-link{
+    cursor: pointer;
+}
+
+.hover-link:hover{
+    color: blue;
+}
+
+.user{
+    background-color: rgb(23, 104, 226);
+    color: white;
+    padding: 15px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.user:hover{
+    background-color: rgb(14, 55, 116);
+}
+
+.main-container{
+    height: 100%;
+    width: 100%;
+}
+
+.container-left{
+    width: 50%;
+}
+
+.container-left h2{
+    font-size: 60px;
+}
+
+.container-left p{
+    font-size: 20px;
+}
+
+.container-left h2:nth-child(3){
+    color: blue;
+}
+
+.btn button{
+    margin-top: 25px;
+    padding: 25px 65px;
+    border: none;
+    color: white;
+    background-color: rgb(68, 183, 236);
+    border-radius: 15px;
+}
+
+.container-right{
+    width: 50%;
+}
+
+.container-right .img img{
+    width: 100%;
+}
+
+.achievements{
+    background-color: rgb(68, 183, 236);
+    justify-content: space-evenly;
+    padding: 40px 0;
+}
+
+.achievements div:nth-child(1) h1{
+    font-size: 40px;
+}
+
+.achievements div p{
+    font-weight: bold;
+}
+
+.achievements hr{
+    padding: 1px;
+    height: 40px;
+    background-color: black;
+}
+
+
+.services{
+    width: 100%;
+    height: 100%;
+    margin: 80px 0;
+}
+
+.serv-cont{
+    display: flex;
+}
+
+.services-left{
+    width: 50%;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.service-left-head{
+    margin: 15px;
+}
+
+.service-left-price-btn{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.service-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service-btn div:nth-child(1){
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.service-left-item{
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    color: blue;
+}
+
+.services-right{
+    width: 50%;
+    height: 100%;
+}
+
+.service-right-top{
+    height: 50%;
+    border: 1px solid black;
+    padding: 15px;
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-right-top hr{
+    width: 100%;
+}
+
+.service-right-top-head{
+    margin: 15px;
+}
+
+.service-right-top-table{
+    margin: 15px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.itemsAdded{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.totalAmount{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.service-right-bottom{
+    height: 50%;
+    border: 1px solid black;
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-right-bottom-emailNum{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.bookbtn button{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(68, 183, 236);
+    color: white;
+    border-radius: 15px;
+    width: 100%;
+}

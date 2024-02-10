@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 5</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="input.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <nav>
+    <div class="main-nav container flex">
+      <a href="" class="logo">Logo</a>
+      <div class="nav-links">
+        <ul class="flex">
+          <li class="hover-link nav-item">Home</li>
+          <li class="hover-link nav-item">Services</li>
+          <li class="hover-link nav-item">About Us</li>
+          <li class="hover-link nav-item">Contact Us</li>
+        </ul>
+      </div>
+      <div class="nav-user">
+        <button class="user">Username</button>
+      </div>
+    </div>
+  </nav>
+  <section class="main-container">
+    <div class="container flex">
+      <div class="container-left">
+        <div class="container-left-top">
+          <h2>Revitalize Your</h2>
+          <h2>Clothes With Expert</h2>
+          <h2>Laundary Services!</h2>
+          <p>
+            From premium dry cleaning to swift wash and fold, we deliver care
+            and convenience. Schedule a pickup and rediscover the freshness of
+            your clothes today!
+          </p>
+        </div>
+        <div class="btn">
+          <button class="flex">
+            <span class="material-symbols-outlined">storefront</span>Book Our
+            Services
+          </button>
+        </div>
+      </div>
+      <div class="container-right">
+        <div class="img">
+          <img src="./washingServices.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="achievements flex">
+      <div>
+        <h1>Our Achievements</h1>
+      </div>
+      <div>
+        <h1>15+</h1>
+        <p>Laundry Services</p>
+      </div>
+      <hr />
+      <div>
+        <h1>240+</h1>
+        <p>Happy Customers</p>
+      </div>
+      <hr />
+      <div>
+        <h1>2+ Yrs</h1>
+        <p>Experience</p>
+      </div>
+    </div>
+  </section>
+  <section class="services">
+    <div class="container serv-cont">
+      <div class="services-left">
+        <div class="service-left-head">
+          <h2>Our Services</h2>
+          <p>
+            Click on The add to Cart Button To Add the Services To Your Cart
+          </p>
+        </div>
+        <hr />
+        <div class="service-left-price-btn">
+          <div class="service-btn">
+            <div>
+              <h3>Dry Clean</h3>
+              <p>Rs200</p>
+            </div>
+            <div class="service-btn">
+              <button>
+                Add Item
+                <span class="material-symbols-outlined">add_circle</span>
+              </button>
+            </div>
+          </div>
+          <div class="service-btn">
+            <div>
+              <h3>Wash & Fold</h3>
+              <p>Rs100</p>
+            </div>
+            <div class="service-btn">
+              <button>
+                Add Item
+                <span class="material-symbols-outlined">add_circle</span>
+              </button>
+            </div>
+          </div>
+          <div class="service-btn">
+            <div>
+              <h3>Ironing</h3>
+              <p>Rs30</p>
+            </div>
+            <div class="iron">
+              <button>
+                Add Item
+                <span class="material-symbols-outlined">add_circle</span>
+              </button>
+            </div>
+          </div>
+          <div class="service-btn">
+            <div>
+              <h3>Stain Removal</h3>
+              <p>Rs500</p>
+            </div>
+            <div class="dry-btn">
+              <button>
+                Add Item
+                <span class="material-symbols-outlined">add_circle</span>
+              </button>
+            </div>
+          </div>
+          <div class="service-btn">
+            <div>
+              <h3>Leather & Suede Cleaning</h3>
+              <p>Rs999</p>
+            </div>
+            <div class="dry-btn">
+              <button>
+                Add Item
+                <span class="material-symbols-outlined">add_circle</span>
+              </button>
+            </div>
+          </div>
+          <div class="service-btn">
+            <div>
+              <h3>Wedding Dress Cleaning</h3>
+              <p>Rs2800</p>
+            </div>
+            <div class="dry-btn">
+              <button>
+                Add Item
+                <span class="material-symbols-outlined">add_circle</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="service-left-item">
+          <span class="material-symbols-outlined">error</span>
+          <p>Add Item to the cart and book now</p>
+        </div>
+      </div>
+      <div class="services-right">
+        <div class="service-right-top">
+          <div class="service-right-top-head">
+            <h2>Added Item</h2>
+          </div>
+          <hr />
+          <div class="service-right-top-table">
+            <table>
+              <tr>
+                <th>Sr. No</th>
+                <th>Name</th>
+                <th>Price</th>
+              </tr>
+              <tbody id="itemsTablesBody"></tbody>
+            </table>
+            <div id="itemsAdded" class="itemsAdded">
+              <span class="material-symbols-outlined">error</span>
+              <h2>No Items Added</h2>
+              <p>Add Items to the card from services</p>
+            </div>
+          </div>
+          <hr />
+          <div id="totalAmount" class="totalAmount">
+            <h2>Total Amount</h2>
+            <p id="totalAmountValue">Rs 0</p>
+          </div>
+        </div>
+        <div class="service-right-bottom">
+          <div class="service-right-bottom-heading">
+            <h2>Book Now</h2>
+          </div>
+          <div class="service-right-bottom-fname">
+            <label for="">Full Name</label>
+            <p class="input-container">
+              <input type="text" placeholder="Enter your name" name="text" id="text" class="input-field"
+                autocomplete="name" />
+            </p>
+          </div>
+          <div class="service-right-bottom-emailNum">
+            <form action="">
+              <label for="">Email</label>
+              <p class="input-container">
+                <input type="email" placeholder="Enter your email" name="email" id="Uemail" class="input-field"
+                  autocomplete="email" />
+              </p>
+            </form>
+            <form action="">
+              <label for="">Number</label>
+              <p class="input-container">
+                <input type="number" placeholder="Enter your number" name="number" id="Unumber" class="input-field"
+                  autocomplete="cc-number" />
+              </p>
+            </form>
+          </div>
+          <div class="bookbtn">
+            <button type="submit">Book Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

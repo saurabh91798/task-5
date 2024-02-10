@@ -1,0 +1,12 @@
+.text-blue{
+    color: blue;
+}
+
+.bg-blue{
+    background-color: rgb(39, 155, 227);
+}
+
+.flex{
+    display: flex;
+}
+
