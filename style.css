@@ -142,7 +142,18 @@ nav{
     gap: 25px;
 }
 
-.service-btn{
+.service {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service > div {
+    display: flex;
+    gap: 20px;
+}
+
+.service-btn > button {
     display: flex;
     align-items: center;
     justify-content: space-between;
