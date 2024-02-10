@@ -84,80 +84,7 @@
           </p>
         </div>
         <hr />
-        <div class="service-left-price-btn">
-          <div class="service-btn">
-            <div>
-              <h3>Dry Clean</h3>
-              <p>Rs200</p>
-            </div>
-            <div class="service-btn">
-              <button>
-                Add Item
-                <span class="material-symbols-outlined">add_circle</span>
-              </button>
-            </div>
-          </div>
-          <div class="service-btn">
-            <div>
-              <h3>Wash & Fold</h3>
-              <p>Rs100</p>
-            </div>
-            <div class="service-btn">
-              <button>
-                Add Item
-                <span class="material-symbols-outlined">add_circle</span>
-              </button>
-            </div>
-          </div>
-          <div class="service-btn">
-            <div>
-              <h3>Ironing</h3>
-              <p>Rs30</p>
-            </div>
-            <div class="iron">
-              <button>
-                Add Item
-                <span class="material-symbols-outlined">add_circle</span>
-              </button>
-            </div>
-          </div>
-          <div class="service-btn">
-            <div>
-              <h3>Stain Removal</h3>
-              <p>Rs500</p>
-            </div>
-            <div class="dry-btn">
-              <button>
-                Add Item
-                <span class="material-symbols-outlined">add_circle</span>
-              </button>
-            </div>
-          </div>
-          <div class="service-btn">
-            <div>
-              <h3>Leather & Suede Cleaning</h3>
-              <p>Rs999</p>
-            </div>
-            <div class="dry-btn">
-              <button>
-                Add Item
-                <span class="material-symbols-outlined">add_circle</span>
-              </button>
-            </div>
-          </div>
-          <div class="service-btn">
-            <div>
-              <h3>Wedding Dress Cleaning</h3>
-              <p>Rs2800</p>
-            </div>
-            <div class="dry-btn">
-              <button>
-                Add Item
-                <span class="material-symbols-outlined">add_circle</span>
-              </button>
-            </div>
-          </div>
-        </div>
+        <div id="services-list" class="service-left-price-btn"></div>
         <hr />
         <div class="service-left-item">
           <span class="material-symbols-outlined">error</span>
@@ -170,26 +97,7 @@
             <h2>Added Item</h2>
           </div>
           <hr />
-          <div class="service-right-top-table">
-            <table>
-              <tr>
-                <th>Sr. No</th>
-                <th>Name</th>
-                <th>Price</th>
-              </tr>
-              <tbody id="itemsTablesBody"></tbody>
-            </table>
-            <div id="itemsAdded" class="itemsAdded">
-              <span class="material-symbols-outlined">error</span>
-              <h2>No Items Added</h2>
-              <p>Add Items to the card from services</p>
-            </div>
-          </div>
-          <hr />
-          <div id="totalAmount" class="totalAmount">
-            <h2>Total Amount</h2>
-            <p id="totalAmountValue">Rs 0</p>
-          </div>
+          <div class="service-right-top-table" id="right-section"></div>
         </div>
         <div class="service-right-bottom">
           <div class="service-right-bottom-heading">
@@ -225,6 +133,6 @@
       </div>
     </div>
   </section>
+  <script src="index.js"></script>
 </body>
-
 </html>
